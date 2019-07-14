@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package mRpc;
+
+option cc_generic_services = true;
+
+message Rvalue {
+    bool success = 1;
+    string errmsg = 2;
+}
+
+message Site {
+    bytes key = 1;
+    bytes value = 2;
+}
+
+message PutRequest{
+    repeated Site sites = 1;
+}
+message PutResult{
+    repeated Rvalue rvals  = 1;
+}
+message GetRequest{
+    repeated bytes keys = 1;
+}
+message GetResult{
+    Rvalue rvals = 1;
+    repeated Site sites = 2;
+}
+service TestMessage {
+    rpc Put (PutRequest) returns (PutResult);
+    rpc Get (GetRequest) returns (GetResult);
+}
+
