@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libmRpc.so -o libmRpc.so CMakeFiles/mRpc.dir/codeClite.cpp.o CMakeFiles/mRpc.dir/rpcChannel.cpp.o CMakeFiles/mRpc.dir/rpcCode.cpp.o CMakeFiles/mRpc.dir/rpcServer.cpp.o CMakeFiles/mRpc.dir/tcpServer.cpp.o CMakeFiles/mRpc.dir/tcpClient.cpp.o CMakeFiles/mRpc.dir/rpc.pb.cc.o -lglog -lpthread -levent 

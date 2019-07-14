@@ -1,0 +1,9 @@
+/usr/local/../../lib/libmRpc.so
+/usr/local/../../install/src/codeClite.h
+/usr/local/../../install/src/google-inl.h
+/usr/local/../../install/src/rpcChannel.h
+/usr/local/../../install/src/rpcCode.h
+/usr/local/../../install/src/rpcServer.h
+/usr/local/../../install/src/tcpServer.h
+/usr/local/../../install/src/tcpClient.h
+/usr/local/../../install/src/rpc.pb.h
